@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ارتباط با من</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Circle-icons-computer.svg/2048px-Circle-icons-computer.svg.png" />
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+        </script>
+    <script>
+        $(function () {
+            $("#nav").load("nav.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+    <script type="text/javascript">
+        function ask_the_sender() {
+            if(confirm("آیا از ارسال پیام خود اطمینان دارید؟")){
+                alert("پیغام شما با موفقیت ارسال شد.");
+            }
+        }
+    </script>
+</head>
+
+<body dir=rtl>
+    <!-- Navigation Bar -->
+    <div id="nav"></div>
+
+
+    <div class="row">
+        <div style="padding-right: 3%;" class="column">
+            <h2>فرم ارتباط با من</h2>
+            <p>برای ارتباط با من این فرم رو پر کنید. سریع می خونمش.</p>
+        </div>
+        <div class="column x2">
+            <div class="container">
+                <form >
+                    <div class="row">
+
+                        <div class="col-25">
+                            <label for="fname">نام</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="name" name="firstname" placeholder="نام شما">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="emali">ایمیل</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="email" id="email" name="email" placeholder="ایمیل شما">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="category">موضوع ارتباط</label>
+                        </div>
+                        <div class="col-75">
+                            <select id="category" name="category">
+                                <option value="enteghad">انتقادات و پیشنهادات</option>
+                                <option value="hamkari">همکاری و توسعه محصول</option>
+                                <option value="sayer">سایر</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="message">پیام</label>
+                        </div>
+                        <div class="col-75">
+                            <textarea id="message" name="message" placeholder="پیام خود را اینجا بنویسید"
+                                style="height:200px"></textarea>
+                        </div>
+                    </div>
+
+                    <br>
+                    <div class="row">
+                        <input onclick="ask_the_sender();" type="submit" value="ارسال">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="push"></div>
+    <!-- Footer -->
+    <div id="footer"></div>
+</body>
+
+</html>

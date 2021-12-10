@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سیدعلی طیب</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Circle-icons-computer.svg/2048px-Circle-icons-computer.svg.png" />
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+        </script>
+    <script>
+        $(function () {
+            $("#nav").load("nav.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+</head>
+
+<body dir=rtl>
+    <!-- Navigation Bar -->
+    <div id="nav"></div>
+
+
+    <div class="row">
+
+        <div class="column">
+            <div class="row">
+                <div class="column center large">
+                    <h1>سلام! من <br> سید علی طیب <br> هستم.</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <p class="medium center">
+                        علاقه مند به طراحی سخت افزار و توسعه نرم افزار <br> در حال حاضر دانشجوی دانشگاه صنعتی شریف
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column center">
+                    <button class="beautiful-button medium" onclick="location.href='contact.html'">
+                        <span>تماس با من</span>
+                    </button>
+                    <button class="beautiful-button medium" onclick="location.href='skills.html'">
+                        <span>معرفی بیشتر</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="column" style="padding-left: 7%;">
+            <img src="media/programmer.webp" alt="sayyed ali tayyeb picture">
+        </div>
+    </div>
+
+    <div class="row small" style="margin-top: 50px; margin-bottom: 50px;">
+
+        <div class="column">
+            <h3 class="center">سوابق تحصیلی</h3>
+            <ul>
+                <li>کارشناسی: مهندسی کامپیوتر - دانشگاه صنعتی شریف </li>
+                <li>دیپلم: رشته ریاضی فیزیک - دبیرستان استعداد های درخشان شهید قدوسی </li>
+            </ul>
+        </div>
+
+        <div class="column">
+            <h3 class="center">اطلاعات شخصی</h3>
+            <ul>
+                <li>سن: 19</li>
+                <li>محل سکونت: قم</li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <div id="footer"></div>
+</body>
+
+</html>

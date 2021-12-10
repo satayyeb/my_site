@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مهارت ها</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Circle-icons-computer.svg/2048px-Circle-icons-computer.svg.png" />
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+        </script>
+    <script>
+        $(function () {
+            $("#nav").load("nav.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+</head>
+
+<body dir=rtl>
+    <!-- Navigation Bar -->
+    <div id="nav"></div>
+
+    <div class="row">
+        <div class="column center">
+            <img align="center" src="media/pic1.jpeg" alt="programming" width="60%" height=auto>
+        </div>
+    </div>
+
+    <div class="row  medium">
+
+        <div class="column">
+            <h3 class="center">مهارت های نرم افزاری</h3>
+            <ul dir="ltr">
+                <li>PHP</li>
+                <li>Laravel</li>
+                <li>MySQL</li>
+                <li>C/C++</li>
+                <li>Python</li>
+            </ul>
+        </div>
+        <div class="column">
+            <h3 class="center">مهارت های سخت/نرم افزاری</h3>
+            <ul dir="ltr">
+                <li>Atmel AVR</li>
+                <li>Arduino</li>
+                <li>ESP8266</li>
+                <li>IOT</li>
+                <li>PCB designing</li>
+            </ul>
+        </div>
+        <div class="column">
+            <h3 class="center">زبان های مورد تسلط</h3>
+            <ul dir="ltr">
+                <li>Persian</li>
+                <li>English</li>
+                <li>Arabic</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="push"></div>
+    <!-- Footer -->
+    <div id="footer"></div>
+</body>
+
+</html>
