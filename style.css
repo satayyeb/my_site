@@ -41,7 +41,7 @@ html, body {
     height: 100px;
 }
 
-nav a {
+nav a, nav button {
     margin-top: 15px;
     margin-bottom: 15px;
     margin-left: 7px;
@@ -56,7 +56,7 @@ nav a {
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.363);
 }
 
-nav a:hover {
+nav a:hover, nav button:hover {
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.109);
     background-color: #d7d4ee;
     color: rgb(0, 0, 0);
@@ -79,13 +79,13 @@ nav a:hover {
     color: rgb(0, 0, 0);
 }
 
-nav a.contact {
+nav a.contact, nav button.contact {
     margin-left: 13%;
     color: white;
     background-color: #2937f0;
 }
 
-nav a.contact:hover {
+nav a.contact:hover, nav button.contact:hover {
     color: white;
     background-color: #1e28af;
 }
